@@ -7,13 +7,33 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    justify-content: space-around;
+    position: relative;
 
     &__title {
         color: black;
+        font-family: 'Cinzel', serif;
+        z-index: 2;
+        font-weight: 200;
+        font-size: 2rem;
     }
 
     &__stitle {
         color: black;
+        z-index: 2;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        margin-top: -7rem;
+    }
+
+    &__shadow {
+        position: absolute;
+        font-family: 'Cinzel', serif;
+        color: $ligth-beige;
+        font-size: 9.5rem;
+        top: -8px;
+        left: 0;
+        z-index: 1;
     }
 
     &__cards {
@@ -34,8 +54,8 @@
             display: flex;
             flex-direction: column;
             align-items: flex-start;
-            justify-content: space-around;
-            background-color: $beige;
+            // justify-content: space-around;
+            background-color: $ligth-beige;
             
 
 
@@ -51,9 +71,33 @@
             div {
                 display: flex;
                 flex-direction: row;
-                gap: 1rem;
+                padding: 0.5rem;
+                
+                span {
+                    font-size: small;
+                    padding: 1rem;
+                    font-family: 'Open Sans', sans-serif;
+                }
                 
             }
+
+            p {
+                font-family: 'Frank Ruhl Libre', serif;
+                font-weight: 100;
+                padding: 1rem;
+                font-size: 1.2rem;
+            }
+
         }
+    }
+
+    &__logos {
+        display: flex;
+        flex-direction: row;
+        min-height: 10vh;
+        min-width: 90vw;
+        align-items: center;
+        justify-content: space-around;
+        padding-bottom: 10vh;
     }
 }
