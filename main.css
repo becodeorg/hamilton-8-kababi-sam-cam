@@ -134,12 +134,13 @@ font-family: 'Open Sans', sans-serif;
   padding: 0;
   min-width: 50px;
   max-width: 25vw;
-  min-height: 65vh;
-  max-height: 70vh;
+  min-height: 60vh;
+  max-height: 65vh;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   background-color: #faf6f0;
+  z-index: 2;
 }
 .blog__cards__item img {
   display: flex;
@@ -164,6 +165,18 @@ font-family: 'Open Sans', sans-serif;
   padding: 1rem;
   font-size: 1.2rem;
 }
+.blog__cards__item button {
+  color: black;
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 1em;
+  display: flex;
+  gap: 0.7em;
+  box-shadow: none;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+}
 .blog__logos {
   display: flex;
   flex-direction: row;
@@ -172,8 +185,35 @@ font-family: 'Open Sans', sans-serif;
   align-items: center;
   justify-content: space-around;
   padding-bottom: 10vh;
+  flex-wrap: wrap;
 }
 
+@media (max-width: 781px) {
+  .blog {
+    min-height: 250vh;
+    justify-content: center;
+    gap: 10vh;
+  }
+  .blog__title {
+    color: black;
+  }
+  .blog__stitle {
+    margin-top: -4rem;
+  }
+  .blog__shadow {
+    font-size: 9rem;
+  }
+  .blog__cards {
+    flex-direction: column;
+    min-height: 200vh;
+  }
+  .blog__cards__item {
+    min-width: 50vw;
+    max-width: 70vw;
+    min-height: 50vh;
+    max-height: 70vh;
+  }
+}
 /* 
 font-family: 'Cinzel', serif;
 font-family: 'Frank Ruhl Libre', serif;
