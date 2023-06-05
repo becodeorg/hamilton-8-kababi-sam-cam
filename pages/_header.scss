@@ -5,26 +5,29 @@
 header {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
     url("../assets/img/slider/img_bg_slider_home01.jpg");
-  background-position: left top;
-  background-repeat: no-repeat;
-  background-size: cover;
+    background-position:top center;
+    background-repeat: no-repeat;
+    background-size: cover;
     color: $white;
     font-family: 'Open Sans', sans-serif;
+    height: 55em;
+    
     .nav {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         align-items: center;
-        padding: 10px;
-      
+        padding: 1rem;
+        
         &__list--left {
           display: flex;
           align-items: center;
+          margin-top: 2%;
       
           .nav__logo {
-            width: 100px;
-            margin-right: 20px;
-            margin-left: 20%;
+            width: 10rem;
+            margin-right: 2vw;
+            margin-left: 3rem;
           }
       
           ul {
@@ -32,16 +35,14 @@ header {
             list-style: none;
       
             li {
-              margin-right: 10px;
-      
-              &:last-child {
-                margin-right: 0;
-              }
-              &:hover{
+              margin-right: 2.5rem;
+
+              &:hover {
                 color: $beige;
-            }
+              }
+      
               i {
-                margin-left: 5px;
+                margin-left: 0.5rem;
               }
             }
           }
@@ -50,39 +51,66 @@ header {
         &__list--rigth {
           display: flex;
           align-items: center;
+          flex-direction: row;
       
           a {
-            margin-right: 10px;
+            margin-right: 1rem;
             text-decoration: none;
-            &:hover{
-                color: $beige;
+            color: $white;
+      
+            &:hover {
+              color: $beige;
             }
+      
             &:visited {
-                color: $white;
+              color: $white;
             }
+      
             &:visited:hover {
-                color: $beige;
+              color: $beige;
             }
           }
       
           button {
-            padding: 12px 20px;
-            background-color: $beige;
-            border-radius: 5px;
-            border: solid 1px transparent;
-            color: $white;
-            font-size: 0.7em;
-            font-weight: 600;
-            i {
-                margin-left: 5px;
-            }
-            &:hover {
-                background-color: transparent;
-                border: solid 1px $typo-ligth-blakc;
-                color: black;
-            }
-            
+            @extend beige-button;
+            margin-left: 1.5rem;
           }
         }
       }
+
+      .header__text {
+        display: flex;
+        flex-direction: row;
+        position: relative;
+        margin-top: 150px;
+        margin-left: 10%;
+      
+        img {
+          width: 9em;
+          height: 9em;
+          position: relative;
+          top: -24px;
+          left: -190px; /*pas responsive*/
+        }
+      
+        h1 {
+          font-family: 'Cinzel', serif;
+          font-size: 7em;
+          width: 37%;
+          font-weight: 500;
+        }
+      
+        .fa-circle-play {
+          font-size: 1vw;
+          margin-left: 425px;
+          margin-top: 236px;
+          margin-right: 5%;
+        }
+      }
+    button{
+      @extend transparent-button;
+      color: $white;
+      margin-left: 10%;
+    }
+    
     }      

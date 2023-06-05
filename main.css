@@ -4,57 +4,94 @@ font-family: 'Cinzel', serif;
 font-family: 'Frank Ruhl Libre', serif;
 font-family: 'Open Sans', sans-serif;
 */
+beige-button, header .nav__list--rigth button {
+  padding: 15px 25px; /*warning, different in the last section */
+  background-color: #c8a96a;
+  border-radius: 5px;
+  border: solid 1px transparent;
+  color: #fff;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+beige-button i, header .nav__list--rigth button i {
+  margin-left: 5px;
+}
+beige-button:hover, header .nav__list--rigth button:hover {
+  background-color: transparent;
+  border: solid 1px #1f1f1f;
+  /*color: $color; -> can be different */
+}
+
+transparent-button, header button {
+  padding: 15px 25px;
+  background-color: transparent;
+  border-radius: 5px;
+  border: solid 1px rgb(48, 48, 48);
+  color: #1f1f1f;
+  font-size: 0.7em;
+  font-weight: 600;
+}
+transparent-button i, header button i {
+  margin-left: 5px;
+}
+transparent-button:hover, header button:hover {
+  background-color: #c8a96a;
+  border: solid 1px transparent;
+  color: #fff;
+}
+
 * {
   margin: 0%;
 }
 
 header {
   background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0)), url("../assets/img/slider/img_bg_slider_home01.jpg");
-  background-position: left top;
+  background-position: top center;
   background-repeat: no-repeat;
   background-size: cover;
   color: #fff;
   font-family: "Open Sans", sans-serif;
+  height: 55em;
 }
 header .nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 1rem;
 }
 header .nav__list--left {
   display: flex;
   align-items: center;
+  margin-top: 2%;
 }
 header .nav__list--left .nav__logo {
-  width: 100px;
-  margin-right: 20px;
-  margin-left: 20%;
+  width: 10rem;
+  margin-right: 2vw;
+  margin-left: 3rem;
 }
 header .nav__list--left ul {
   display: flex;
   list-style: none;
 }
 header .nav__list--left ul li {
-  margin-right: 10px;
-}
-header .nav__list--left ul li:last-child {
-  margin-right: 0;
+  margin-right: 2.5rem;
 }
 header .nav__list--left ul li:hover {
   color: #c8a96a;
 }
 header .nav__list--left ul li i {
-  margin-left: 5px;
+  margin-left: 0.5rem;
 }
 header .nav__list--rigth {
   display: flex;
   align-items: center;
+  flex-direction: row;
 }
 header .nav__list--rigth a {
-  margin-right: 10px;
+  margin-right: 1rem;
   text-decoration: none;
+  color: #fff;
 }
 header .nav__list--rigth a:hover {
   color: #c8a96a;
@@ -66,21 +103,37 @@ header .nav__list--rigth a:visited:hover {
   color: #c8a96a;
 }
 header .nav__list--rigth button {
-  padding: 12px 20px;
-  background-color: #c8a96a;
-  border-radius: 5px;
-  border: solid 1px transparent;
+  margin-left: 1.5rem;
+}
+header .header__text {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin-top: 150px;
+  margin-left: 10%;
+}
+header .header__text img {
+  width: 9em;
+  height: 9em;
+  position: relative;
+  top: -24px;
+  left: -190px; /*pas responsive*/
+}
+header .header__text h1 {
+  font-family: "Cinzel", serif;
+  font-size: 7em;
+  width: 37%;
+  font-weight: 500;
+}
+header .header__text .fa-circle-play {
+  font-size: 1vw;
+  margin-left: 425px;
+  margin-top: 236px;
+  margin-right: 5%;
+}
+header button {
   color: #fff;
-  font-size: 0.7em;
-  font-weight: 600;
-}
-header .nav__list--rigth button i {
-  margin-left: 5px;
-}
-header .nav__list--rigth button:hover {
-  background-color: transparent;
-  border: solid 1px #1f1f1f;
-  color: black;
+  margin-left: 10%;
 }
 
 .footer {
@@ -135,6 +188,4 @@ header .nav__list--rigth button:hover {
 }
 .footer__bar__links {
   display: flex;
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
