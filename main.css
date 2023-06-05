@@ -123,8 +123,9 @@ font-family: 'Open Sans', sans-serif;
   max-width: 20vw;
   color: white;
   align-self: flex-start;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Frank Ruhl Libre", serif;
   font-size: 1.5rem;
+  font-weight: 400;
 }
 .footer__ensemble__newsletter p {
   color: white;
@@ -159,8 +160,9 @@ font-family: 'Open Sans', sans-serif;
 .footer__ensemble__division .ensemble__title {
   max-width: 20vw;
   color: white;
-  font-family: "Open Sans", sans-serif;
+  font-family: "Frank Ruhl Libre", serif;
   font-size: 1.5rem;
+  font-weight: 400;
 }
 .footer__ensemble__division .ensemble__list {
   max-width: 20vw;
@@ -215,6 +217,10 @@ font-family: 'Open Sans', sans-serif;
   padding: 7px;
   border-radius: 14px;
   color: white;
+  transition: 0.3s;
+}
+.footer__bar__links li a i:hover {
+  background-color: #c8a96a;
 }
 
 @media (max-width: 781px) {
