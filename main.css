@@ -176,6 +176,14 @@ font-family: 'Open Sans', sans-serif;
   box-shadow: none;
   margin-left: 2rem;
   margin-bottom: 2rem;
+  transition: 0.2s;
+}
+.blog__cards__item button:hover {
+  background-color: #c8a96a;
+  color: white;
+}
+.blog__cards__item button:hover i {
+  color: white;
 }
 .blog__logos {
   display: flex;

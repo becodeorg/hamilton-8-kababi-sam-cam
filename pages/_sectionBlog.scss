@@ -100,7 +100,17 @@
                 box-shadow: none;
                 margin-left: 2rem;
                 margin-bottom: 2rem;
+                transition: 0.2s;
 
+            }
+
+            button:hover {
+                background-color: $beige;
+                color: white;
+
+                i {
+                    color: white;
+                }
             }
 
         }
