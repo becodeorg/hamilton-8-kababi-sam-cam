@@ -1,5 +1,88 @@
-header {
-    background-image: url("./assets/img/slider/img_bg_slider_home01.jpg");
-    background-position: center;
-    background-size: cover;
+* {
+    margin: 0%;
 }
+
+header {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
+    url("../assets/img/slider/img_bg_slider_home01.jpg");
+  background-position: left top;
+  background-repeat: no-repeat;
+  background-size: cover;
+    color: $white;
+    font-family: 'Open Sans', sans-serif;
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px;
+      
+        &__list--left {
+          display: flex;
+          align-items: center;
+      
+          .nav__logo {
+            width: 100px;
+            margin-right: 20px;
+            margin-left: 20%;
+          }
+      
+          ul {
+            display: flex;
+            list-style: none;
+      
+            li {
+              margin-right: 10px;
+      
+              &:last-child {
+                margin-right: 0;
+              }
+              &:hover{
+                color: $beige;
+            }
+              i {
+                margin-left: 5px;
+              }
+            }
+          }
+        }
+      
+        &__list--rigth {
+          display: flex;
+          align-items: center;
+      
+          a {
+            margin-right: 10px;
+            text-decoration: none;
+            &:hover{
+                color: $beige;
+            }
+            &:visited {
+                color: $white;
+            }
+            &:visited:hover {
+                color: $beige;
+            }
+          }
+      
+          button {
+            padding: 12px 20px;
+            background-color: $beige;
+            border-radius: 5px;
+            border: solid 1px transparent;
+            color: $white;
+            font-size: 0.7em;
+            font-weight: 600;
+            i {
+                margin-left: 5px;
+            }
+            &:hover {
+                background-color: transparent;
+                border: solid 1px $typo-ligth-blakc;
+                color: black;
+            }
+            
+          }
+        }
+      }
+    }      
