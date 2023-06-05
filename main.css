@@ -5,6 +5,7 @@ font-family: 'Frank Ruhl Libre', serif;
 font-family: 'Open Sans', sans-serif;
 */
 @import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Frank+Ruhl+Libre:wght@300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Frank+Ruhl+Libre:wght@300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
 * {
   margin: 0%;
 }
@@ -82,6 +83,57 @@ header .nav__list--rigth button:hover {
   background-color: transparent;
   border: solid 1px #1f1f1f;
   color: black;
+}
+
+/* 
+font-family: 'Cinzel', serif;
+font-family: 'Frank Ruhl Libre', serif;
+font-family: 'Open Sans', sans-serif;
+*/
+.blog {
+  min-height: 150vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.blog__title {
+  color: black;
+}
+.blog__stitle {
+  color: black;
+}
+.blog__cards {
+  max-width: 80vw;
+  max-height: 65vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.blog__cards__item {
+  margin: 0;
+  padding: 0;
+  min-width: 50px;
+  max-width: 25vw;
+  min-height: 65vh;
+  max-height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  background-color: #c8a96a;
+}
+.blog__cards__item img {
+  display: flex;
+  justify-content: center;
+  max-width: inherit;
+  margin-top: -20px;
+  padding: 0;
+}
+.blog__cards__item div {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
 }
 
 /* 
