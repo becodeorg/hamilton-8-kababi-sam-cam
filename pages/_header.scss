@@ -2,6 +2,34 @@ header {
     margin: 0%;
 }
 
+@media (max-width: 1020px) {
+      header{
+        text-align : center;
+        position: relative;
+        margin: 0%;
+        flex-direction: column;
+
+        .nav{
+          display: none;
+          .nav__logo, li, button, p, a {
+            display: none;
+          }
+        }
+      }
+      .header__text{
+        img{
+          text-align: center;
+          margin: 0%;
+        }
+        .fa-circle-play{
+        margin: inherit;
+        }
+        
+      }
+
+
+}
+
 header {
     background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
     url("../assets/img/slider/img_bg_slider_home01.jpg");
@@ -87,34 +115,36 @@ header {
 
       .header__text {
         display: flex;
+        flex-wrap: wrap;
         flex-direction: row;
         position: relative;
-        margin-top: 150px;
         margin-left: 10%;
+        min-height: 100%;
+
+        .fa-circle-play{
+          position: relative;
+          font-size: 15px;
+          margin-left: 425px;
+          margin-top: 236px;
+          margin-right: 5%;
+        }
       
         img {
           width: 9em;
           height: 9em;
           position: relative;
-          top: -24px;
-          left: -190px; /*pas responsive*/
+          margin-top: 40px;
         }
       
         h1 {
           font-family: 'Cinzel', serif;
           font-size: 7em;
-          max-width: 25%;
+          max-width: 300px;
           font-weight: 500;
           margin-bottom: 15px;
           
         }
       
-        .fa-circle-play {
-          font-size: 1vw;
-          margin-left: 425px;
-          margin-top: 236px;
-          margin-right: 5%;
-        }
       }
     button{
       @extend transparent-button;
