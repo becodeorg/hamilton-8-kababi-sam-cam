@@ -25,7 +25,7 @@ beige-button:hover, header .nav__list--rigth button:hover {
   /*color: $color; -> can be different */
 }
 
-transparent-button, header button {
+transparent-button, button, header button {
   padding: 15px 25px;
   background-color: transparent;
   border-radius: 5px;
@@ -35,16 +35,16 @@ transparent-button, header button {
   font-weight: 600;
   cursor: pointer;
 }
-transparent-button i, header button i {
+transparent-button i, button i, header button i {
   margin-left: 5px;
 }
-transparent-button:hover, header button:hover {
+transparent-button:hover, button:hover, header button:hover {
   background-color: #c8a96a;
   border: solid 1px transparent;
   color: #fff;
 }
 
-* {
+header {
   margin: 0%;
 }
 
@@ -55,7 +55,7 @@ header {
   background-size: cover;
   color: #fff;
   font-family: "Open Sans", sans-serif;
-  min-height: 60em;
+  min-height: 65em;
 }
 header .menu-toggle {
   display: none;
@@ -134,6 +134,7 @@ header .header__text h1 {
   font-size: 7em;
   max-width: 25%;
   font-weight: 500;
+  margin-bottom: 15px;
 }
 header .header__text .fa-circle-play {
   font-size: 1vw;
@@ -144,6 +145,72 @@ header .header__text .fa-circle-play {
 header button {
   color: #fff;
   margin-left: 10%;
+}
+
+.gallerySection {
+  margin: 0%;
+}
+
+.gallerySection {
+  min-height: 150vh;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  border: red solid;
+  min-height: 65em;
+}
+.gallerySection__title {
+  color: black;
+  font-family: "Cinzel", serif;
+  z-index: 2;
+  font-weight: 200;
+  font-size: 2rem;
+  margin-top: 4%;
+  position: relative;
+}
+.gallerySection__stitle {
+  color: black;
+  z-index: 2;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  position: relative;
+}
+.gallerySection__shadow {
+  position: absolute;
+  font-family: "Cinzel", serif;
+  color: #faf6f0;
+  font-size: 9.5rem;
+  top: -7px;
+  left: 0;
+  z-index: -9999;
+}
+.gallerySection .gallery {
+  margin: 0 5% 0 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.gallerySection .gallery--hover {
+  display: none;
+}
+.gallerySection .gallery--hover:hover {
+  display: flex;
+}
+.gallerySection .gallery img {
+  width: calc(auto - 10px);
+  margin: 10px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+@media (max-width: 768px) {
+  .gallerySection .gallery img {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+button {
+  margin: 50px;
 }
 
 /* 
