@@ -57,6 +57,26 @@
 
         img {
             max-width: 17vw;
+            
+        }
+    }
+}
+
+@media (max-width: 781px) {
+    .chefs {
+        &__titles {
+            &__title {
+                margin-left: 20vw;
+            }
+        }
+
+        &__ensemble {
+            flex-wrap: wrap;
+
+
+            img {
+                min-width: 40vw;
+            }
         }
     }
 }

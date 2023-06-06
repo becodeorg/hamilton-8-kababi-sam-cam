@@ -516,4 +516,16 @@ font-family: 'Open Sans', sans-serif;
   max-width: 17vw;
 }
 
+@media (max-width: 781px) {
+  .chefs__titles__title {
+    margin-left: 20vw;
+  }
+  .chefs__ensemble {
+    flex-wrap: wrap;
+  }
+  .chefs__ensemble img {
+    min-width: 40vw;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
