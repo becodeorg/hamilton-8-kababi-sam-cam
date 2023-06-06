@@ -1,0 +1,43 @@
+@import '../utils/fonts';
+
+@import '../utils/variables';
+
+.menu {
+    display: flex;
+    flex-direction: column;
+    min-height: 110vh;
+
+    &__titles {
+        display: flex;
+        flex-direction: column;
+        &__title {
+            color: black;
+        }
+
+        &__stitle {
+            color: black;
+        }
+    }
+
+    &__shadow {
+        color: black;
+    }
+
+    .bread {
+        max-width: 20vw;
+
+    }
+
+    .steak {
+        max-width: 20vw;
+
+    }
+
+    &__ensemble {
+        max-width: 90vw;
+        display: grid;
+        &__item {
+            max-width: 35vw;
+        }
+    }
+}
