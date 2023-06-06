@@ -132,7 +132,7 @@ header .header__text img {
 header .header__text h1 {
   font-family: "Cinzel", serif;
   font-size: 7em;
-  max-width: 37%;
+  max-width: 25%;
   font-weight: 500;
 }
 header .header__text .fa-circle-play {
@@ -456,6 +456,4 @@ font-family: 'Open Sans', sans-serif;
   .footer__ensemble__division .ensemble__list__item {
     font-size: 0.65rem;
   }
-}
-
-/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=main.css.map */
