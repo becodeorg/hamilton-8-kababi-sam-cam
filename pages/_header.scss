@@ -10,8 +10,11 @@ header {
     background-size: cover;
     color: $white;
     font-family: 'Open Sans', sans-serif;
-    height: 55em;
+    min-height: 60em;
     
+    .menu-toggle{
+      display: none;
+    }
     .nav {
         display: flex;
         flex-direction: row;
@@ -36,6 +39,7 @@ header {
       
             li {
               margin-right: 2.5rem;
+              cursor: pointer;
 
               &:hover {
                 color: $beige;
@@ -52,6 +56,7 @@ header {
           display: flex;
           align-items: center;
           flex-direction: row;
+          margin-top: 2%;
       
           a {
             margin-right: 1rem;
@@ -74,8 +79,10 @@ header {
           button {
             @extend beige-button;
             margin-left: 1.5rem;
+            margin-right: 120px;
           }
         }
+        
       }
 
       .header__text {
@@ -96,7 +103,7 @@ header {
         h1 {
           font-family: 'Cinzel', serif;
           font-size: 7em;
-          width: 37%;
+          max-width: 37%;
           font-weight: 500;
         }
       
@@ -112,5 +119,7 @@ header {
       color: $white;
       margin-left: 10%;
     }
+    } 
+
+
     
-    }      

@@ -12,6 +12,7 @@ beige-button, header .nav__list--rigth button {
   color: #fff;
   font-size: 0.7em;
   font-weight: 600;
+  cursor: pointer;
 }
 beige-button i, header .nav__list--rigth button i {
   margin-left: 5px;
@@ -30,6 +31,7 @@ transparent-button, header button {
   color: #1f1f1f;
   font-size: 0.7em;
   font-weight: 600;
+  cursor: pointer;
 }
 transparent-button i, header button i {
   margin-left: 5px;
@@ -51,7 +53,10 @@ header {
   background-size: cover;
   color: #fff;
   font-family: "Open Sans", sans-serif;
-  height: 55em;
+  min-height: 60em;
+}
+header .menu-toggle {
+  display: none;
 }
 header .nav {
   display: flex;
@@ -76,6 +81,7 @@ header .nav__list--left ul {
 }
 header .nav__list--left ul li {
   margin-right: 2.5rem;
+  cursor: pointer;
 }
 header .nav__list--left ul li:hover {
   color: #c8a96a;
@@ -87,6 +93,7 @@ header .nav__list--rigth {
   display: flex;
   align-items: center;
   flex-direction: row;
+  margin-top: 2%;
 }
 header .nav__list--rigth a {
   margin-right: 1rem;
@@ -104,6 +111,7 @@ header .nav__list--rigth a:visited:hover {
 }
 header .nav__list--rigth button {
   margin-left: 1.5rem;
+  margin-right: 120px;
 }
 header .header__text {
   display: flex;
@@ -122,7 +130,7 @@ header .header__text img {
 header .header__text h1 {
   font-family: "Cinzel", serif;
   font-size: 7em;
-  width: 37%;
+  max-width: 37%;
   font-weight: 500;
 }
 header .header__text .fa-circle-play {
