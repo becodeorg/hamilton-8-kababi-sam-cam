@@ -7,11 +7,11 @@
     background-color: $ligth-beige;
     display: flex;
     flex-direction: column;
-    min-height: 110vh;
+    min-height: 115vh;
     align-items: center;
     justify-content: space-around;
     position: relative;
-    padding-bottom: 50px;
+    padding-bottom: 10vh;
     
 
     &__titles {
@@ -76,7 +76,7 @@
             max-width: 42vw;
             min-width: 35vw;
             min-height: 12vh;
-            border: 5px solid white;
+            border: 3px solid white;
             border-radius: 10px;
             display: flex;
             flex-direction: row;
