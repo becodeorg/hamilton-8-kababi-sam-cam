@@ -249,27 +249,25 @@ header button {
   z-index: 2;
   font-weight: 200;
   font-size: 2rem;
-  margin-top: 6%;
-  position: relative;
 }
 .gallerySection__stitle {
   color: black;
   z-index: 2;
   font-family: "Open Sans", sans-serif;
   font-weight: 300;
-  position: relative;
+  margin-top: -7rem;
 }
 .gallerySection__shadow {
   position: absolute;
   font-family: "Cinzel", serif;
   color: #faf6f0;
-  font-size: 15rem;
-  top: -7px;
+  font-size: 9.5rem;
+  top: -90px;
   left: 0;
   z-index: -9999;
 }
 .gallerySection .gallery {
-  margin: 5% 5% 0 5%;
+  margin: 10% 5% 0 5%;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
