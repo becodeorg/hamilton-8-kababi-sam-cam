@@ -810,5 +810,96 @@ font-family: 'Open Sans', sans-serif;
     min-width: 80vw;
   }
 }
+.category {
+  background-image: url(/assets/img/banner/imgbgcategory.jpg);
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  gap: 20vh;
+  min-width: 110vh;
+}
+.category__titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  justify-content: center;
+}
+.category__titles__title {
+  color: black;
+  font-size: 2.5rem;
+  font-family: "Frank Ruhl Libre", serif;
+  font-weight: 200;
+}
+.category__titles__stitle {
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+}
+.category__shadow {
+  color: gray;
+  position: absolute;
+  max-width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  font-size: 10rem;
+  opacity: 0.2;
+  font-family: "Cinzel", serif;
+  font-weight: 200;
+}
+.category__ensemble {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  max-width: 85vw;
+  gap: 1.5rem;
+  min-height: 80vh;
+}
+.category__ensemble__item {
+  margin: 0;
+  max-width: 15vw;
+  min-width: 10vw;
+  background-color: #c8a96a;
+  max-height: 30vh;
+  min-height: 25vh;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.category__ensemble__item img {
+  max-width: 3vw;
+  margin-top: 0.5rem;
+}
+.category__ensemble__item h3 {
+  color: white;
+  font-family: "Frank Ruhl Libre", serif;
+}
+.category__ensemble__item a i {
+  color: white;
+}
+.category__images {
+  max-width: 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+.category__images .plateone {
+  max-width: 15vw;
+  height: auto;
+}
+.category__images .platetwo {
+  max-width: 30vw;
+}
+.category__images .platethree {
+  max-width: 15vw;
+  height: auto;
+}
 
 /*# sourceMappingURL=main.css.map */

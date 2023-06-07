@@ -1,0 +1,107 @@
+
+.category {
+    background-image: url(/assets/img/banner/imgbgcategory.jpg);
+    background-position: center;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    gap: 20vh;
+    min-width: 110vh;
+    &__titles {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 1;
+        justify-content: center;
+        &__title {
+            color: black;
+            font-size: 2.5rem;
+            font-family: 'Frank Ruhl Libre', serif;
+            font-weight: 200;
+        }
+
+        &__stitle {
+            color: black;
+            font-family: 'Open Sans', sans-serif;
+            font-weight: 100;
+        }
+    }
+
+    &__shadow {
+        color: gray;
+        position: absolute;
+        max-width: 100vw;
+        top: 0;
+        left: 0;
+        z-index: 0;
+        font-size: 10rem;
+        opacity: 0.2;
+        font-family: 'Cinzel', serif;
+        font-weight: 200;
+    }
+
+    &__ensemble {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        max-width: 85vw;
+        gap: 1.5rem;
+        min-height: 80vh;
+        &__item {
+            margin: 0;
+            max-width: 15vw;
+            min-width: 10vw;
+            background-color: $beige;
+            max-height: 30vh;
+            min-height: 25vh;
+            padding: 0.5rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            
+            img {
+                max-width: 3vw;
+                margin-top: 0.5rem;
+            }
+
+            h3 {
+                color: white;
+                font-family: 'Frank Ruhl Libre', serif;
+            }
+
+            a {
+                i {
+                    color: white;
+                }
+            }
+        }
+        
+        
+    }
+
+    &__images {
+            max-width: 90px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-around;
+
+            .plateone {
+                max-width: 15vw;
+                height: auto;
+            }
+            
+            .platetwo {
+                max-width: 30vw;
+            }
+
+            .platethree {
+                max-width: 15vw;
+                height: auto;
+            }
+
+            }
+}
