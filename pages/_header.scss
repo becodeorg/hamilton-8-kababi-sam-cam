@@ -3,25 +3,6 @@
 header {
     margin: 0%;
 }
-@media (max-width: 1070px) {
-  header {
-    text-align: center;
-    position: relative;
-    margin: 0%;
-    flex-direction: column;
-  }
-
-  
-
-  .header__text img {
-    text-align: center;
-    margin: 0%;
-  }
-
-  .header__text .fa-circle-play {
-    margin: inherit;
-  }
-}
 
 @media (max-width: 1070px) {
       header{

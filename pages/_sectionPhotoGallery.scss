@@ -7,7 +7,6 @@
     text-align: center;
     align-items: center;
     position: relative;
-    border: red solid;
     min-height:65em;
 
     &__title {
@@ -16,7 +15,7 @@
         z-index: 2;
         font-weight: 200;
         font-size: 2rem;
-        margin-top: 4%;
+        margin-top: 6%;
         position: relative;
     }
 
@@ -32,14 +31,14 @@
         position: absolute;
         font-family: 'Cinzel', serif;
         color: $ligth-beige;
-        font-size: 9.5rem;
+        font-size: 15rem;
         top: -7px;
         left: 0;
         z-index: -9999;
     }
 
     .gallery {
-        margin: 0 5% 0 5%;
+        margin: 5% 5% 0 5%;
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
