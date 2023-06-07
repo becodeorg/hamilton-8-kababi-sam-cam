@@ -30,6 +30,6 @@ Made by Sam Kovacevic Camille Marchandon.
 
 The following resources may be helpful for understanding HTML, SCSS, and web development concepts:
 
-    -[HTML Documentation] (https://developer.mozilla.org/en-US/)
-    -[SCSS Documentation] (https://sass-lang.com/documentation/)
-    -[W3Schools] (https://www.w3schools.com/)
+    - [HTML Documentation] (https://developer.mozilla.org/en-US/)
+    - [SCSS Documentation] (https://sass-lang.com/documentation/)
+    - [W3Schools] (https://www.w3schools.com/)
