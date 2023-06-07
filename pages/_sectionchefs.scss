@@ -1,0 +1,81 @@
+@import '../utils/fonts';
+
+@import '../utils/variables';
+
+.chefs {
+    min-height: 100vh;
+    background-image: url(../assets/img/our-chefs/imgbg-ourchefs.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-bottom: 3vh;
+    gap: 15vh;
+
+    &__titles {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        z-index: 2;
+        gap: 1.5rem;
+    
+    &__title {
+        color: white;
+        font-family: 'Cinzel', serif;
+        font-size: 2.5rem;
+        font-weight: 300;
+        padding-top: 5vh;
+        margin-top: 10vh;
+    }
+
+    &__stitle {
+        color: white;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 200;
+    }
+    }
+    &__shadow {
+        color: white;
+        font-family: 'Cinzel', serif;
+        font-size: 10rem;
+        position: absolute;
+        left: 2vw;
+        top: 7vh;
+        z-index: 0;
+        opacity: 0.02;
+    }
+
+    &__ensemble {
+        display: flex;
+        flex-direction: row;
+        max-width: 90vw;
+        max-height: 70vh;
+        align-items: center;
+        justify-content: space-around;
+        gap: 3vw;
+
+        img {
+            max-width: 17vw;
+            
+        }
+    }
+}
+
+@media (max-width: 781px) {
+    .chefs {
+        &__titles {
+            &__title {
+                margin-left: 20vw;
+            }
+        }
+
+        &__ensemble {
+            flex-wrap: wrap;
+
+
+            img {
+                min-width: 40vw;
+            }
+        }
+    }
+}
