@@ -27,7 +27,7 @@ beige-button:hover, header .nav__list--rigth button:hover {
   /*color: $color; -> can be different */
 }
 
-transparent-button, button, header button {
+transparent-button, .gallerySection button, header button {
   padding: 15px 25px;
   background-color: transparent;
   border-radius: 5px;
@@ -37,10 +37,10 @@ transparent-button, button, header button {
   font-weight: 600;
   cursor: pointer;
 }
-transparent-button i, button i, header button i {
+transparent-button i, .gallerySection button i, header button i {
   margin-left: 5px;
 }
-transparent-button:hover, button:hover, header button:hover {
+transparent-button:hover, .gallerySection button:hover, header button:hover {
   background-color: #c8a96a;
   border: solid 1px transparent;
   color: #fff;
@@ -245,6 +245,9 @@ header button {
   position: relative;
   min-height: 65em;
 }
+.gallerySection button {
+  margin: 50px;
+}
 .gallerySection__title {
   color: black;
   font-family: "Cinzel", serif;
@@ -291,10 +294,6 @@ header button {
     width: 100%;
     margin: 10px 0;
   }
-}
-
-button {
-  margin: 50px;
 }
 
 /* 
@@ -344,10 +343,10 @@ font-family: 'Open Sans', sans-serif;
 .blog__cards__item {
   margin: 0;
   padding: 0;
-  min-width: 50px;
+  min-width: 35vh;
   max-width: 25vw;
-  min-height: 60vh;
-  max-height: 65vh;
+  min-height: 70vh;
+  max-height: 75vh;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -357,9 +356,10 @@ font-family: 'Open Sans', sans-serif;
 .blog__cards__item img {
   display: flex;
   justify-content: center;
-  max-width: inherit;
+  max-width: 100%;
   margin-top: -20px;
   padding: 0;
+  height: auto;
 }
 .blog__cards__item div {
   display: flex;
@@ -430,8 +430,8 @@ font-family: 'Open Sans', sans-serif;
   .blog__cards__item {
     min-width: 50vw;
     max-width: 70vw;
-    min-height: 50vh;
-    max-height: 70vh;
+    min-height: 70vh;
+    max-height: 80vh;
   }
 }
 /* 
