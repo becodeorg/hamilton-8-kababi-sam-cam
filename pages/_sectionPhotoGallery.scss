@@ -1,5 +1,6 @@
 .gallerySection {
     margin: 0%;
+    padding-top: 100px;
 }
 
 .gallerySection {
@@ -22,7 +23,6 @@
         z-index: 2;
         font-family: 'Open Sans', sans-serif;
         font-weight: 300;
-        margin-top: -7rem;
     }
 
     &__shadow {
@@ -30,7 +30,7 @@
         font-family: 'Cinzel', serif;
         color: $ligth-beige;
         font-size: 9.5rem;
-        top: -90px;
+        top: 50px;
         left: 0;
         z-index: -9999;
     }
