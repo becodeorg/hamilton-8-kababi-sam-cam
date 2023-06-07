@@ -1,6 +1,8 @@
 
 .category {
-    background-image: url(/assets/img/banner/imgbgcategory.jpg);
+    background-image:url(/assets/img/banner/imgbgcategory.jpg);
+    background-color: $ligth-beige;
+    background-blend-mode: multiply;
     background-position: center;
     background-size: 100%;
     background-repeat: no-repeat;
@@ -93,7 +95,7 @@
             justify-content: space-around;
             align-items: flex-end;
             gap: 2rem;
-            background-color: white;
+            background-color: transparent;
 
             .plateone {
                 max-width: 20vw;
@@ -102,6 +104,8 @@
             
             .platetwo {
                 max-width: 40vw;
+                border: 20px solid white;
+                border-radius: 100%;
             }
 
             .platethree {
