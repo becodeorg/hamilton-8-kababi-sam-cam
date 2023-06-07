@@ -280,8 +280,7 @@ header button {
 .gallerySection .gallery img {
   width: calc(auto - 10px);
   margin: 10px;
-  -o-object-fit: cover;
-     object-fit: cover;
+  object-fit: cover;
   transition: filter 0.3s ease;
 }
 .gallerySection .gallery img:hover {
@@ -741,8 +740,7 @@ font-family: 'Open Sans', sans-serif;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   row-gap: 3vh;
-  -moz-column-gap: 1rem;
-       column-gap: 1rem;
+  column-gap: 1rem;
   z-index: 1;
 }
 .menu__ensemble__item {
@@ -810,4 +808,6 @@ font-family: 'Open Sans', sans-serif;
   .menu__ensemble__item {
     min-width: 80vw;
   }
-}/*# sourceMappingURL=main.css.map */
+}
+
+/*# sourceMappingURL=main.css.map */
