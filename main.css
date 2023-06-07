@@ -819,8 +819,10 @@ font-family: 'Open Sans', sans-serif;
   flex-direction: column;
   position: relative;
   align-items: center;
-  gap: 20vh;
-  min-width: 110vh;
+  gap: 5vh;
+  min-width: 100vw;
+  max-height: 150vh;
+  margin-bottom: 10vh;
 }
 .category__titles {
   display: flex;
@@ -859,6 +861,7 @@ font-family: 'Open Sans', sans-serif;
   max-width: 85vw;
   gap: 1.5rem;
   min-height: 80vh;
+  flex-wrap: wrap;
 }
 .category__ensemble__item {
   margin: 0;
@@ -889,17 +892,20 @@ font-family: 'Open Sans', sans-serif;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+  align-items: flex-end;
+  gap: 2rem;
+  background-color: white;
 }
 .category__images .plateone {
-  max-width: 15vw;
-  height: auto;
+  max-width: 20vw;
+  max-height: 40vh;
 }
 .category__images .platetwo {
-  max-width: 30vw;
+  max-width: 40vw;
 }
 .category__images .platethree {
-  max-width: 15vw;
-  height: auto;
+  max-width: 20vw;
+  max-height: 40vh;
 }
 
 /*# sourceMappingURL=main.css.map */
