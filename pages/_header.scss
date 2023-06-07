@@ -1,0 +1,213 @@
+
+
+header {
+    margin: 0%;
+}
+
+@media (max-width: 1070px) {
+      header{
+        text-align : center;
+        position: relative;
+        margin: 0%;
+        flex-direction: column;
+
+        .nav{
+          display: none;
+          .nav__logo, li, button, p, a {
+            display: none;
+          }
+        }
+      }
+
+      .header__text{
+        img{
+          text-align: center;
+          margin: 0%;
+        }
+        .fa-circle-play{
+        margin: inherit;
+        }
+        
+      }
+
+
+}
+
+
+header {
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0)),
+    url("assets/img/slider/img_bg_slider_home01.jpg");
+    background-position:top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: $white;
+    font-family: 'Open Sans', sans-serif;
+    min-height: 65em;
+    
+    .fa-bars{
+      display: none;
+      @media (max-width: 1070px) {
+        display: block;
+        font-size: 5em;
+        background-color: rgba(0, 0, 0, 0.5);
+        padding: 25px;
+      }
+    }
+    .nav {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 1rem;
+        
+        &__list--left {
+          display: flex;
+          align-items: center;
+          margin-top: 2%;
+      
+          .nav__logo {
+            width: 10rem;
+            margin-right: 2vw;
+            margin-left: 3rem;
+          }
+      
+          ul {
+            display: flex;
+            list-style: none;
+      
+            li {
+              margin-right: 2.5rem;
+              cursor: pointer;
+
+              &:hover {
+                color: $beige;
+              }
+      
+              i {
+                margin-left: 0.5rem;
+              }
+            }
+          }
+        }
+      
+        &__list--rigth {
+          display: flex;
+          align-items: center;
+          flex-direction: row;
+          margin-top: 2%;
+      
+          a {
+            margin-right: 1rem;
+            text-decoration: none;
+            color: $white;
+      
+            &:hover {
+              color: $beige;
+            }
+      
+            &:visited {
+              color: $white;
+            }
+      
+            &:visited:hover {
+              color: $beige;
+            }
+          }
+      
+          button {
+            @extend beige-button;
+            margin-left: 1.5rem;
+            margin-right: 120px;
+          }
+        }
+        
+      }
+
+      .header__text {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        position: relative;
+        margin-left: 10%;
+        min-height: 100%;
+        @media (max-width: 1070px) {
+          font-size: 100%;
+          margin: 0%;
+          margin-top: 5%;
+          display: flex;
+          flex-direction: column;
+        }
+
+        .text__responsive{
+          display: flex;
+          flex-wrap: wrap;
+          flex-direction: row;
+          font-size: 1em;
+          @media (max-width: 1070px) {
+            font-size: 100%;
+            margin: 0%;
+            margin-top: 0%;
+            display: flex;
+            flex-direction: column;
+          }
+        }
+
+        .fa-circle-play{
+          flex-wrap: wrap;
+          position: relative;
+          font-size: 15px;
+          margin-left: 425px;
+          margin-top: 236px;
+          margin-right: 5%;
+
+          @media (max-width: 1070px) {
+            font-size: 110%;
+            margin-top: 5%;
+            margin-left: auto;
+            margin-right: auto;
+          }
+        }
+      
+        img {
+          width: 9em;
+          height: 9em;
+          position: relative;
+          margin-top: 26px;
+          margin-left: -189px;
+
+          @media (max-width: 1070px) {
+            margin-left: auto;
+            margin-right: auto;
+          }
+        }
+      
+        h1 {
+          font-family: 'Cinzel', serif;
+          font-family: 'Cinzel', serif;
+          font-size: 600%;
+          font-weight: 500;
+          margin-bottom: 15px;
+
+          @media (max-width: 1070px) {
+            font-size: 300%;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 0%;
+          }
+        }
+      
+      }
+    button{
+      @extend transparent-button;
+      color: $white;
+      margin-left: 10%;
+      @media (max-width: 1070px) {
+        max-width: 70%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+    } 
+
+
+    

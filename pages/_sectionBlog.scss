@@ -1,0 +1,164 @@
+@import '../utils/variables';
+
+@import '../utils/fonts';
+
+.blog {
+    min-height: 150vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+
+    &__title {
+        color: black;
+        font-family: 'Cinzel', serif;
+        z-index: 2;
+        font-weight: 200;
+        font-size: 2rem;
+    }
+
+    &__stitle {
+        color: black;
+        z-index: 2;
+        font-family: 'Open Sans', sans-serif;
+        font-weight: 300;
+        margin-top: -7rem;
+    }
+
+    &__shadow {
+        position: absolute;
+        font-family: 'Cinzel', serif;
+        color: $ligth-beige;
+        font-size: 9.5rem;
+        top: -8px;
+        left: 0;
+        z-index: 1;
+    }
+
+    &__cards {
+        max-width: 80vw;
+        max-height: 65vh;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        gap: 2rem;
+
+        &__item {
+            margin: 0;
+            padding: 0;
+            min-width: 35vh;
+            max-width: 25vw;
+            min-height: 70vh;
+            max-height: 75vh;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            // justify-content: space-around;
+            background-color: $ligth-beige;
+            z-index: 2;
+            
+
+
+            img {
+                display: flex;
+                justify-content: center;
+                max-width: 100%;
+                margin-top: -20px;
+                padding: 0;
+                height: auto;
+
+            }
+
+            div {
+                display: flex;
+                flex-direction: row;
+                padding: 0.5rem;
+                
+                span {
+                    font-size: small;
+                    padding: 1rem;
+                    font-family: 'Open Sans', sans-serif;
+                }
+                
+            }
+
+            p {
+                font-family: 'Frank Ruhl Libre', serif;
+                font-weight: 100;
+                padding: 1rem;
+                font-size: 1.2rem;
+            }
+
+            button {
+                color: black;
+                background-color: white;
+                border: 2px solid white;
+                border-radius: 5px;
+                padding: 1em;
+                display: flex;
+                gap: 0.7em;
+                box-shadow: none;
+                margin-left: 2rem;
+                margin-bottom: 2rem;
+                transition: 0.2s;
+
+            }
+
+            button:hover {
+                background-color: $beige;
+                color: white;
+
+                i {
+                    color: white;
+                }
+            }
+
+        }
+    }
+
+    &__logos {
+        display: flex;
+        flex-direction: row;
+        min-height: 10vh;
+        min-width: 90vw;
+        align-items: center;
+        justify-content: space-around;
+        padding-bottom: 10vh;
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 781px) {
+    .blog {
+        min-height: 250vh;
+        justify-content: center;
+        gap: 10vh;
+        &__title {
+            color: black;
+
+        }
+
+        &__stitle {
+            margin-top: -4rem;
+
+        }
+
+        &__shadow {
+            font-size: 9rem;
+
+        }
+
+        &__cards {
+            flex-direction: column;
+            min-height: 200vh;
+            &__item{
+                min-width: 50vw;
+                max-width: 70vw;
+                min-height: 70vh;
+                max-height: 80vh;
+
+            }
+        }
+    }
+}

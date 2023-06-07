@@ -1,0 +1,1038 @@
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Frank+Ruhl+Libre:wght@300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+/* 
+font-family: 'Cinzel', serif;
+font-family: 'Frank Ruhl Libre', serif;
+font-family: 'Open Sans', sans-serif;
+*/
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Frank+Ruhl+Libre:wght@300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Frank+Ruhl+Libre:wght@300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Frank+Ruhl+Libre:wght@300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700;800;900&family=Frank+Ruhl+Libre:wght@300;400;500;600;700;800;900&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap");
+beige-button, .aboutUs button, header .nav__list--rigth button {
+  padding: 15px 25px; /*warning, different in the last section */
+  background-color: #c8a96a;
+  border-radius: 5px;
+  border: solid 1px transparent;
+  color: #fff;
+  font-size: 0.7em;
+  font-weight: 600;
+  cursor: pointer;
+}
+beige-button i, .aboutUs button i, header .nav__list--rigth button i {
+  margin-left: 5px;
+}
+beige-button:hover, .aboutUs button:hover, header .nav__list--rigth button:hover {
+  background-color: transparent;
+  border: solid 1px #1f1f1f;
+  /*color: $color; -> can be different */
+}
+
+transparent-button, button, .gallerySection button, header button {
+  padding: 15px 25px;
+  background-color: transparent;
+  border-radius: 5px;
+  border: solid 1px rgb(48, 48, 48);
+  color: #1f1f1f;
+  font-size: 0.7em;
+  font-weight: 600;
+  cursor: pointer;
+}
+transparent-button i, button i, .gallerySection button i, header button i {
+  margin-left: 5px;
+}
+transparent-button:hover, button:hover, header button:hover {
+  background-color: #c8a96a;
+  border: solid 1px transparent;
+  color: #fff;
+}
+
+header {
+  margin: 0%;
+}
+
+@media (max-width: 1070px) {
+  header {
+    text-align: center;
+    position: relative;
+    margin: 0%;
+    flex-direction: column;
+  }
+  header .nav {
+    display: none;
+  }
+  header .nav .nav__logo, header .nav li, header .nav button, header .nav p, header .nav a {
+    display: none;
+  }
+  .header__text img {
+    text-align: center;
+    margin: 0%;
+  }
+  .header__text .fa-circle-play {
+    margin: inherit;
+  }
+}
+header {
+  background-image: linear-gradient(to right, rgb(0, 0, 0), rgba(0, 0, 0, 0)), url("assets/img/slider/img_bg_slider_home01.jpg");
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #fff;
+  font-family: "Open Sans", sans-serif;
+  min-height: 65em;
+}
+header .fa-bars {
+  display: none;
+}
+@media (max-width: 1070px) {
+  header .fa-bars {
+    display: block;
+    font-size: 5em;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 25px;
+  }
+}
+header .nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+}
+header .nav__list--left {
+  display: flex;
+  align-items: center;
+  margin-top: 2%;
+}
+header .nav__list--left .nav__logo {
+  width: 10rem;
+  margin-right: 2vw;
+  margin-left: 3rem;
+}
+header .nav__list--left ul {
+  display: flex;
+  list-style: none;
+}
+header .nav__list--left ul li {
+  margin-right: 2.5rem;
+  cursor: pointer;
+}
+header .nav__list--left ul li:hover {
+  color: #c8a96a;
+}
+header .nav__list--left ul li i {
+  margin-left: 0.5rem;
+}
+header .nav__list--rigth {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  margin-top: 2%;
+}
+header .nav__list--rigth a {
+  margin-right: 1rem;
+  text-decoration: none;
+  color: #fff;
+}
+header .nav__list--rigth a:hover {
+  color: #c8a96a;
+}
+header .nav__list--rigth a:visited {
+  color: #fff;
+}
+header .nav__list--rigth a:visited:hover {
+  color: #c8a96a;
+}
+header .nav__list--rigth button {
+  margin-left: 1.5rem;
+  margin-right: 120px;
+}
+header .header__text {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  position: relative;
+  margin-left: 10%;
+  min-height: 100%;
+}
+@media (max-width: 1070px) {
+  header .header__text {
+    font-size: 100%;
+    margin: 0%;
+    margin-top: 5%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+header .header__text .text__responsive {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  font-size: 1em;
+}
+@media (max-width: 1070px) {
+  header .header__text .text__responsive {
+    font-size: 100%;
+    margin: 0%;
+    margin-top: 0%;
+    display: flex;
+    flex-direction: column;
+  }
+}
+header .header__text .fa-circle-play {
+  flex-wrap: wrap;
+  position: relative;
+  font-size: 15px;
+  margin-left: 425px;
+  margin-top: 236px;
+  margin-right: 5%;
+}
+@media (max-width: 1070px) {
+  header .header__text .fa-circle-play {
+    font-size: 110%;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+header .header__text img {
+  width: 9em;
+  height: 9em;
+  position: relative;
+  margin-top: 26px;
+  margin-left: -189px;
+}
+@media (max-width: 1070px) {
+  header .header__text img {
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+header .header__text h1 {
+  font-family: "Cinzel", serif;
+  font-family: "Cinzel", serif;
+  font-size: 600%;
+  font-weight: 500;
+  margin-bottom: 15px;
+}
+@media (max-width: 1070px) {
+  header .header__text h1 {
+    font-size: 300%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 0%;
+  }
+}
+header button {
+  color: #fff;
+  margin-left: 10%;
+}
+@media (max-width: 1070px) {
+  header button {
+    max-width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+.gallerySection {
+  margin: 0%;
+  padding-top: 100px;
+}
+
+.gallerySection {
+  min-height: 150vh;
+  text-align: center;
+  align-items: center;
+  position: relative;
+  min-height: 65em;
+}
+.gallerySection button {
+  margin: 50px;
+}
+.gallerySection__title {
+  color: black;
+  font-family: "Cinzel", serif;
+  z-index: 2;
+  font-weight: 200;
+  font-size: 2rem;
+}
+.gallerySection__stitle {
+  color: black;
+  z-index: 2;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+}
+.gallerySection__shadow {
+  position: absolute;
+  font-family: "Cinzel", serif;
+  color: #faf6f0;
+  font-size: 9.5rem;
+  top: 50px;
+  left: 0;
+  z-index: -9999;
+}
+.gallerySection .gallery {
+  margin: 10% 5% 0 5%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.gallerySection .gallery--hover {
+  display: none;
+}
+.gallerySection .gallery img {
+  width: calc(auto - 10px);
+  margin: 10px;
+  object-fit: cover;
+  transition: filter 0.3s ease;
+}
+.gallerySection .gallery img:hover {
+  filter: brightness(0.3);
+}
+@media (max-width: 768px) {
+  .gallerySection img {
+    width: 100%;
+    margin: 10px 0;
+  }
+}
+
+button {
+  margin: 50px;
+}
+
+/* 
+font-family: 'Cinzel', serif;
+font-family: 'Frank Ruhl Libre', serif;
+font-family: 'Open Sans', sans-serif;
+*/
+.blog {
+  min-height: 150vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+}
+.blog__title {
+  color: black;
+  font-family: "Cinzel", serif;
+  z-index: 2;
+  font-weight: 200;
+  font-size: 2rem;
+}
+.blog__stitle {
+  color: black;
+  z-index: 2;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  margin-top: -7rem;
+}
+.blog__shadow {
+  position: absolute;
+  font-family: "Cinzel", serif;
+  color: #faf6f0;
+  font-size: 9.5rem;
+  top: -8px;
+  left: 0;
+  z-index: 1;
+}
+.blog__cards {
+  max-width: 80vw;
+  max-height: 65vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 2rem;
+}
+.blog__cards__item {
+  margin: 0;
+  padding: 0;
+  min-width: 35vh;
+  max-width: 25vw;
+  min-height: 70vh;
+  max-height: 75vh;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  background-color: #faf6f0;
+  z-index: 2;
+}
+.blog__cards__item img {
+  display: flex;
+  justify-content: center;
+  max-width: 100%;
+  margin-top: -20px;
+  padding: 0;
+  height: auto;
+}
+.blog__cards__item div {
+  display: flex;
+  flex-direction: row;
+  padding: 0.5rem;
+}
+.blog__cards__item div span {
+  font-size: small;
+  padding: 1rem;
+  font-family: "Open Sans", sans-serif;
+}
+.blog__cards__item p {
+  font-family: "Frank Ruhl Libre", serif;
+  font-weight: 100;
+  padding: 1rem;
+  font-size: 1.2rem;
+}
+.blog__cards__item button {
+  color: black;
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 5px;
+  padding: 1em;
+  display: flex;
+  gap: 0.7em;
+  box-shadow: none;
+  margin-left: 2rem;
+  margin-bottom: 2rem;
+  transition: 0.2s;
+}
+.blog__cards__item button:hover {
+  background-color: #c8a96a;
+  color: white;
+}
+.blog__cards__item button:hover i {
+  color: white;
+}
+.blog__logos {
+  display: flex;
+  flex-direction: row;
+  min-height: 10vh;
+  min-width: 90vw;
+  align-items: center;
+  justify-content: space-around;
+  padding-bottom: 10vh;
+  flex-wrap: wrap;
+}
+
+@media (max-width: 781px) {
+  .blog {
+    min-height: 250vh;
+    justify-content: center;
+    gap: 10vh;
+  }
+  .blog__title {
+    color: black;
+  }
+  .blog__stitle {
+    margin-top: -4rem;
+  }
+  .blog__shadow {
+    font-size: 9rem;
+  }
+  .blog__cards {
+    flex-direction: column;
+    min-height: 200vh;
+  }
+  .blog__cards__item {
+    min-width: 50vw;
+    max-width: 70vw;
+    min-height: 70vh;
+    max-height: 80vh;
+  }
+}
+/* 
+font-family: 'Cinzel', serif;
+font-family: 'Frank Ruhl Libre', serif;
+font-family: 'Open Sans', sans-serif;
+*/
+.footer {
+  margin: 0;
+  padding: 0;
+  background-image: url(assets/img/footer/img-ng-footer.jpg);
+  max-width: 100vw;
+  height: 90vh;
+  background-size: 110%;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.footer__logo {
+  max-width: 20%;
+  margin-top: 5vh;
+}
+.footer__ensemble {
+  display: flex;
+  flex-direction: row;
+  gap: 5vw;
+  flex-wrap: wrap;
+}
+.footer__ensemble__newsletter {
+  display: flex;
+  flex-direction: column;
+  max-width: 25vw;
+  align-items: center;
+  gap: 1.2em;
+}
+.footer__ensemble__newsletter .ensemble__title {
+  max-width: 20vw;
+  color: white;
+  align-self: flex-start;
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.footer__ensemble__newsletter p {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
+}
+.footer__ensemble__newsletter .form {
+  display: flex;
+  flex-direction: row;
+}
+.footer__ensemble__newsletter .form input {
+  max-width: 20vw;
+  padding: 1rem;
+  align-self: flex-start;
+  margin: 0;
+}
+.footer__ensemble__newsletter .form button {
+  max-width: 5vw;
+  padding: 1rem;
+  border-radius: 0;
+  border-color: #c8a96a;
+  background-color: #c8a96a;
+}
+.footer__ensemble__division {
+  display: flex;
+  flex-direction: column;
+  max-width: 20vw;
+  max-height: 30vh;
+  align-items: center;
+  gap: 1.2em;
+}
+.footer__ensemble__division .ensemble__title {
+  max-width: 20vw;
+  color: white;
+  font-family: "Frank Ruhl Libre", serif;
+  font-size: 1.5rem;
+  font-weight: 400;
+}
+.footer__ensemble__division .ensemble__list {
+  max-width: 20vw;
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  align-items: flex-start;
+}
+.footer__ensemble__division .ensemble__list__item {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
+  display: flex;
+  gap: 7px;
+}
+.footer__ensemble__division .ensemble__list__item img {
+  max-width: 10px;
+}
+.footer__bar {
+  display: flex;
+  max-height: 10vh;
+  max-width: 80vw;
+  gap: 20vw;
+  border-top: 1px solid rgba(250, 249, 249, 0.5);
+  position: relative;
+  padding-top: 10px;
+}
+.footer__bar__image {
+  position: absolute;
+  max-width: 5vw;
+  bottom: 10%;
+  left: 48%;
+}
+.footer__bar__text {
+  font-size: 0.65rem;
+  color: white;
+  font-family: "Open Sans", sans-serif;
+}
+.footer__bar__text a {
+  text-decoration: none;
+  color: #c8a96a;
+  font-family: "Open Sans", sans-serif;
+}
+.footer__bar__links {
+  display: flex;
+  gap: 1rem;
+  list-style: none;
+}
+.footer__bar__links li a i {
+  background-color: gray;
+  padding: 7px;
+  border-radius: 14px;
+  color: white;
+  transition: 0.3s;
+}
+.footer__bar__links li a i:hover {
+  background-color: #c8a96a;
+}
+
+@media (max-width: 781px) {
+  .footer {
+    min-height: 200vh;
+    max-width: 100vw;
+  }
+  .footer__ensemble {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
+    min-height: 160vh;
+  }
+  .footer__ensemble__newsletter .ensemble__title {
+    font-size: 0.8rem;
+  }
+  .footer__ensemble__newsletter p {
+    font-size: 0.65rem;
+  }
+  .footer__ensemble__newsletter .form input {
+    max-width: 15vw;
+    max-height: 5vw;
+  }
+  .footer__ensemble__newsletter .form button {
+    max-width: 5vw;
+    max-height: 10vh;
+  }
+  .footer__ensemble__division {
+    max-width: 50px;
+    max-height: 40px;
+  }
+  .footer__ensemble__division .ensemble__title {
+    font-size: 0.8rem;
+  }
+  .footer__ensemble__division .ensemble__list__item {
+    font-size: 0.65rem;
+  }
+}
+/* 
+font-family: 'Cinzel', serif;
+font-family: 'Frank Ruhl Libre', serif;
+font-family: 'Open Sans', sans-serif;
+*/
+.chefs {
+  background-image: url(assets/img/our-chefs/imgbg-ourchefs.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  padding-bottom: 10vh;
+  gap: 15vh;
+}
+.chefs__titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 2;
+  gap: 1.5rem;
+}
+.chefs__titles__title {
+  color: white;
+  font-family: "Cinzel", serif;
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-top: 25vh;
+  margin-bottom: 0;
+}
+.chefs__titles__stitle {
+  color: white;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 200;
+  margin-top: 0%;
+}
+.chefs__shadow {
+  color: white;
+  font-family: "Cinzel", serif;
+  font-size: 10rem;
+  position: absolute;
+  left: 2vw;
+  top: 7vh;
+  z-index: 0;
+  opacity: 0.02;
+}
+@media (max-width: 1070px) {
+  .chefs__shadow {
+    font-size: 5em;
+  }
+}
+.chefs__ensemble {
+  display: flex;
+  flex-direction: row;
+  max-width: 90vw;
+  max-height: 70vh;
+  align-items: center;
+  justify-content: space-around;
+  gap: 3vw;
+  margin-bottom: 70px;
+}
+.chefs__ensemble img {
+  max-width: 17vw;
+}
+
+@media (max-width: 781px) {
+  .chefs__titles__title {
+    margin-left: 20vw;
+  }
+  .chefs__ensemble {
+    flex-wrap: wrap;
+  }
+  .chefs__ensemble img {
+    min-width: 40vw;
+  }
+}
+/* 
+font-family: 'Cinzel', serif;
+font-family: 'Frank Ruhl Libre', serif;
+font-family: 'Open Sans', sans-serif;
+*/
+.menu {
+  background-color: #faf6f0;
+  display: flex;
+  flex-direction: column;
+  min-height: 115vh;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  padding-bottom: 10vh;
+}
+.menu__titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+}
+.menu__titles__title {
+  color: black;
+  font-size: 2.5rem;
+  font-family: "Frank Ruhl Libre", serif;
+  font-weight: 200;
+}
+.menu__titles__stitle {
+  color: rgb(29, 28, 28);
+  font-family: "Open Sans", sans-serif;
+  font-weight: 200;
+  opacity: 0.7;
+}
+.menu__shadow {
+  color: gray;
+  opacity: 0.1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 11rem;
+  z-index: 0;
+  font-family: "Frank Ruhl Libre", serif;
+  font-weight: 300;
+}
+.menu .bread {
+  position: absolute;
+  right: 0rem;
+  z-index: 0;
+  max-height: 100%;
+  top: 0px;
+}
+.menu .steak {
+  max-width: 14vw;
+  position: absolute;
+  left: 0;
+  bottom: -21vh;
+  z-index: 0;
+}
+.menu__ensemble {
+  max-width: 90vw;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: 3vh;
+  column-gap: 1rem;
+  z-index: 1;
+}
+.menu__ensemble__item {
+  max-width: 42vw;
+  min-width: 35vw;
+  min-height: 12vh;
+  border: 3px solid white;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-top: 0.3em;
+  padding-bottom: 0.3rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+  background-color: white;
+  transition: 0.2s;
+}
+.menu__ensemble__item__text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.menu__ensemble__item__text h4 {
+  font-family: "Frank Ruhl Libre", serif;
+  font-weight: 200;
+  font-size: 1.3rem;
+}
+.menu__ensemble__item__text p {
+  font-family: "Open Sans", sans-serif;
+  font-size: 0.8rem;
+}
+.menu__ensemble__item__price {
+  color: #c8a96a;
+  align-self: center;
+  justify-self: flex-end;
+  font-size: 1.2rem;
+}
+.menu__ensemble__item:hover {
+  border: 3px dotted #c8a96a;
+}
+
+@media (max-width: 781px) {
+  .menu__titles__title {
+    color: black;
+    text-align: center;
+  }
+  .menu__titles__stitle {
+    color: black;
+  }
+  .menu__shadow {
+    font-size: 8rem;
+  }
+  .menu .bread {
+    display: none;
+  }
+  .menu .steak {
+    display: none;
+  }
+  .menu__ensemble {
+    grid-template-columns: repeat(1, 1fr);
+    padding-top: 3vh;
+    padding-bottom: 5vh;
+  }
+  .menu__ensemble__item {
+    min-width: 80vw;
+  }
+}
+.category {
+  background-image: url(/assets/img/banner/imgbgcategory.jpg);
+  background-color: #faf6f0;
+  background-blend-mode: multiply;
+  background-position: center;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  align-items: center;
+  gap: 5vh;
+  min-width: 100vw;
+  max-height: 150vh;
+  margin-bottom: 10vh;
+}
+.category__titles {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  z-index: 1;
+  justify-content: center;
+}
+.category__titles__title {
+  color: black;
+  font-size: 2.5rem;
+  font-family: "Frank Ruhl Libre", serif;
+  font-weight: 200;
+}
+.category__titles__stitle {
+  color: black;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 100;
+}
+.category__shadow {
+  color: gray;
+  position: absolute;
+  max-width: 100vw;
+  top: 0;
+  left: 0;
+  z-index: 0;
+  font-size: 10rem;
+  opacity: 0.2;
+  font-family: "Cinzel", serif;
+  font-weight: 200;
+}
+.category__ensemble {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  max-width: 85vw;
+  gap: 1.5rem;
+  min-height: 80vh;
+  flex-wrap: wrap;
+}
+.category__ensemble__item {
+  margin: 0;
+  max-width: 15vw;
+  min-width: 10vw;
+  background-color: #c8a96a;
+  max-height: 30vh;
+  min-height: 25vh;
+  padding: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+.category__ensemble__item img {
+  max-width: 3vw;
+  margin-top: 0.5rem;
+}
+.category__ensemble__item h3 {
+  color: white;
+  font-family: "Frank Ruhl Libre", serif;
+}
+.category__ensemble__item a i {
+  color: white;
+}
+.category__images {
+  max-width: 90px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: flex-end;
+  gap: 2rem;
+  background-color: transparent;
+}
+.category__images .plateone {
+  max-width: 20vw;
+  max-height: 40vh;
+}
+.category__images .platetwo {
+  max-width: 40vw;
+  border: 20px solid white;
+  border-radius: 100%;
+}
+.category__images .platethree {
+  max-width: 20vw;
+  max-height: 40vh;
+}
+
+.aboutUs {
+  margin-top: 400px;
+  display: flex;
+  flex-direction: column;
+  min-height: 110vh;
+  align-items: center;
+  justify-content: space-around;
+  position: relative;
+  padding-bottom: 100px;
+}
+.aboutUs .logoQualityFoods {
+  left: 150px;
+  left: 458px;
+  position: relative;
+  top: -65px;
+}
+@media (max-width: 1070px) {
+  .aboutUs .logoQualityFoods {
+    display: none;
+  }
+}
+.aboutUs__title {
+  color: black;
+  font-family: "Cinzel", serif;
+  z-index: 2;
+  font-weight: 200;
+  font-size: 2rem;
+  margin-bottom: 0%;
+  margin-top: 70px;
+}
+.aboutUs__stitle {
+  color: black;
+  z-index: 2;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 300;
+  margin: 0%;
+}
+.aboutUs__shadow {
+  position: absolute;
+  font-family: "Cinzel", serif;
+  color: #faf6f0;
+  font-size: 9.5rem;
+  left: 0;
+  z-index: 1;
+}
+.aboutUs__shadow {
+  color: #c8a96a;
+  opacity: 0.1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  font-size: 11rem;
+  z-index: 0;
+  font-family: "Frank Ruhl Libre", serif;
+  font-weight: 300;
+}
+@media (max-width: 767px) {
+  .aboutUs__shadow {
+    font-size: 8rem;
+  }
+}
+@media (max-width: 479px) {
+  .aboutUs__shadow {
+    font-size: 6rem;
+  }
+}
+.aboutUs__block {
+  display: flex;
+  flex-direction: row;
+  margin: 0 15% 0 15%;
+}
+.aboutUs__block__right {
+  display: flex;
+  flex-direction: column;
+  margin-left: 60px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.aboutUs__block__right p {
+  font-family: "Cinzel", serif;
+}
+.aboutUs__block__right button {
+  margin: auto;
+}
+@media (max-width: 1070px) {
+  .aboutUs__block {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  .aboutUs__block img {
+    max-width: 100%;
+    height: auto;
+  }
+  .aboutUs__block__right {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+}
+.aboutUs button a {
+  text-decoration: none;
+  color: inherit;
+}
+.aboutUs button a:visited {
+  color: inherit;
+}
+.aboutUs button:hover {
+  color: black;
+}
+
+/*# sourceMappingURL=main.css.map */
