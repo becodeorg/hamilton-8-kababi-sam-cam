@@ -1,0 +1,10 @@
+@media (max-width: 767px) {
+  responsive {
+    font-size: 8rem;
+  }
+}
+@media (max-width: 479px) {
+  responsive {
+    font-size: 6rem;
+  }
+}/*# sourceMappingURL=responsive titltes.css.map */
