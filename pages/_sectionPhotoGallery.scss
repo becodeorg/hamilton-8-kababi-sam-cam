@@ -9,6 +9,11 @@
     align-items: center;
     position: relative;
     min-height:65em;
+    button {
+      @extend transparent-button;
+      margin: 50px;
+
+  }
 
       &__title {
         color: black;
@@ -65,12 +70,6 @@
         }
       }
     
-
-    button {
-        @extend transparent-button;
-        margin: 50px;
-
-    }
 
 
 
